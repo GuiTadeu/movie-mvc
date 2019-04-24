@@ -18,7 +18,6 @@ public class Sessao {
 	@ManyToOne private Sala sala;
 	@ManyToOne private Filme filme;
 	private LocalTime horario;
-	
 	private BigDecimal preco = BigDecimal.ZERO;
 	
 	/**
