@@ -6,7 +6,6 @@ public class DescontoBanco implements Desconto {
 
 	@Override
 	public BigDecimal calculaDesconto(BigDecimal preco) {
-		return preco.subtract(
-				preco.multiply(new BigDecimal("0.3")));
+		return preco.subtract(new BigDecimal("5"));
 	}
 }

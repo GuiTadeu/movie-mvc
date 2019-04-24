@@ -6,6 +6,6 @@ public class DescontoIdoso implements Desconto{
 
 	@Override
 	public BigDecimal calculaDesconto(BigDecimal preco) {
-		return preco.divide(new BigDecimal("5"));
+		return preco.subtract(preco.multiply(new BigDecimal("0.3")));
 	}
 }
