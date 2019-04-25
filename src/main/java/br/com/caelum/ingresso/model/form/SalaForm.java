@@ -18,7 +18,7 @@ public class SalaForm {
     
     @NotBlank private String nome;
     
-    @NotNull private BigDecimal preco;
+    @NotNull private BigDecimal preco = BigDecimal.ZERO;
 
     private List<Lugar> lugares = new ArrayList<>();
 
