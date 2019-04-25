@@ -8,4 +8,9 @@ public class DescontoEstudante implements Desconto {
 	public BigDecimal calculaDesconto(BigDecimal preco) {
 		return preco.divide(new BigDecimal("2.0"));
 	}
+
+	@Override
+	public String getDescricao() {
+		return "ESTUDANTE";
+	}
 }
