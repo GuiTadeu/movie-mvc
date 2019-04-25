@@ -3,6 +3,8 @@ package br.com.caelum.ingresso.model;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalTime;
+import java.util.List;
+import java.util.Map;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,6 +32,10 @@ public class Sessao {
 		this.filme = filme;
 		this.sala = sala;
 		this.preco = this.sala.getPreco().add(this.filme.getPreco());
+	}
+	
+	public Map<String, List<Lugar>> getMapaDeLugares() {
+		return this.sala.getMapaDeLugares();
 	}
 	
 	public LocalTime getHorarioTermino() {
