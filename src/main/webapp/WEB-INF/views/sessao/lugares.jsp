@@ -23,7 +23,7 @@
 		        <h1>${sessao.filme.nome}</h1>	
 		        <h2>${sessao.sala.nome}</h2>
 		        <h3>${sessao.horario}</h3>
-			<img class="capa" src="${imagemCapa.url}"/>
+			<img class="capa" src="${imagem.url}"/>
 			</div>
 		</div>
 		<div class="main">
