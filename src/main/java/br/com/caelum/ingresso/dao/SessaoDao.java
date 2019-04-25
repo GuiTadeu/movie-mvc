@@ -35,5 +35,9 @@ public class SessaoDao {
 		List<Sessao> sessoes = query.getResultList();
 		return sessoes;
 	}
+	
+	public Sessao findOne(Integer id) {
+		return manager.find(Sessao.class, id);
+	}
 
 }
